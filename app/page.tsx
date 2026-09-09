@@ -1,15 +1,26 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-6xl font-bold">SweatClub</h1>
-        <p className="mt-4 text-xl text-gray-400">
-          Train together. Stay consistent.
+    <main className="min-h-screen bg-black text-white">
+      <section className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
+        <p className="mb-4 text-sm uppercase tracking-[0.3em] text-zinc-500">
+          Your gym. Your people. Your streak.
         </p>
-        <button className="mt-8 rounded-full bg-white px-6 py-3 font-semibold text-black">
-          Join the Club
+
+        <h1 className="max-w-4xl text-6xl font-bold tracking-tight sm:text-8xl">
+          Sweat together.
+          <br />
+          Stay consistent.
+        </h1>
+
+        <p className="mt-6 max-w-xl text-lg text-zinc-400">
+          SweatClub turns going to the gym into a social challenge you actually
+          want to keep.
+        </p>
+
+        <button className="mt-10 rounded-full bg-white px-8 py-4 font-semibold text-black transition hover:bg-zinc-200">
+          Start your streak
         </button>
-      </div>
+      </section>
     </main>
   );
 }
