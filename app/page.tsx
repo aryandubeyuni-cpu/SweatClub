@@ -1,4 +1,7 @@
+"use client";
+import { useState } from "react";
 export default function Home() {
+  const [started, setStarted] = useState(false);
   return (
     <main className="min-h-screen bg-black text-white">
       <nav className="absolute top-0 flex w-full items-center justify-between px-8 py-6">
@@ -24,9 +27,17 @@ export default function Home() {
           want to keep.
         </p>
 
-        <button className="mt-10 rounded-full bg-white px-8 py-4 font-semibold text-black transition hover:bg-zinc-200">
-          Start your streak
+        <button 
+        onClick={() => setStarted(true)}
+  className="mt-10 rounded-full bg-white px-8 py-4 font-semibold text-black transition hover:bg-zinc-200"
+>
+  {started ? "Streak started!" : "Start your streak"}
         </button>
+        {started && (
+  <p className="mt-6 text-green-400">
+    🔥 Your streak has started!
+  </p>
+)}
       </section>
     </main>
   );
