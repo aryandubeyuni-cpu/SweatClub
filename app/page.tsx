@@ -1,6 +1,13 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
+      <nav className="absolute top-0 flex w-full items-center justify-between px-8 py-6">
+    <div className="text-xl font-bold">SweatClub</div>
+
+    <button className="rounded-full border border-zinc-700 px-5 py-2 text-sm">
+      Log in
+    </button>
+  </nav>
       <section className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
         <p className="mb-4 text-sm uppercase tracking-[0.3em] text-zinc-500">
           Your gym. Your people. Your streak.
